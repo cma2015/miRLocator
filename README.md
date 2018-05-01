@@ -64,3 +64,32 @@ $ python miRLocator.py ‐p prediction ‐i /data/predictionData.txt ‐o /data/
 # Evaluating the performance of the model
 $ python miRLocator.py ‐p prediction ‐i /data/predictionData.txt ‐o /data/predict_output ‐m /data/trained_prediction_model ‐a /data/predictionData_Annotated.txt
 ```
+
+## miRLocator local server construction##
+
+#### System Requirement
+* Ubuntu (>= 14.04)  
+
+#### Dependencies:  
+* [ViennaRNA V2.0]:
+```
+$sudo apt-add-repository ppa:j-4/vienna-rna
+$sudo apt-get update
+$sudo apt-get install vienna-rna
+```
+Python package:  
+* [Scikit-learn](http://scikit-learn.org/stable/)  
+* Scikit-neuralnetwork  
+* Numpy  
+* Scipy  
+* Flask  
+* Flask-WTF  
+
+Most Python packages above could be installed by "pip" directly.  
+
+## Run
+```
+$git clone https://github.com/PyJulie/miRLocator.git
+$cd miRLocator
+$sudo python upload.py
+```
