@@ -70,26 +70,22 @@ $ python miRLocator.py ‐p prediction ‐i /data/predictionData.txt ‐o /data/
 #### System Requirement
 * Ubuntu (>= 14.04)  
 
-#### Dependencies:  
-* [ViennaRNA V2.0]:
-```
+#### Dependencies  
+* ViennaRNA V2.0:
+```bash
 $sudo apt-add-repository ppa:j-4/vienna-rna
 $sudo apt-get update
 $sudo apt-get install vienna-rna
 ```
-Python package:  
-* [Scikit-learn](http://scikit-learn.org/stable/)  
-* Scikit-neuralnetwork  
-* Numpy  
-* Scipy  
-* Flask  
-* Flask-WTF  
+* Python package: 
+```bash
+$ pip install scikit-learn scikit-neuralnetwork numpy scipy flask flask-WTF
+```
 
-Most Python packages above could be installed by "pip" directly.  
-
-## Run
+#### Building local miRLocator web server
 ```
 $git clone https://github.com/PyJulie/miRLocator.git
 $cd miRLocator
 $sudo python upload.py
 ```
+Then http://localhost:8080 will be available.
