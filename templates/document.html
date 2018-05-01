@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0046)http://cpc.cbi.pku.edu.cn/programs/run_cpc.jsp -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="Cache-Control" content="no-store, must-revalidate">
+    <link rel="stylesheet" type="text/css" href=" /static/cpc_main2.css">
+    <link rel="stylesheet" type="text/css" href=" /static/cpc_link.css">
+    <script src=" /static/display.js" type="text/javascript"></script>
+    <title>miRLocator</title>
+    <script type="javascript">
+        function warning11() {
+            alert("we will send the result to your email, please wait in patience")
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="center">
+
+
+
+<!-- header image and navigating bar -->
+<div class="header">
+    <img src="../static/head_2.png" alt="Coding Potential Calculator" width="100%">
+	<!--
+    <br />
+    <span class="header_titleI">C</span><span class="header_title">oding</span>
+    <span class="header_titleI">P</span><span class="header_title">otential</span>
+    <span class="header_titleI">C</span><span class="header_title">alculator</span>
+	<br />
+	-->
+</div>
+<div class="header_navbar">
+    <span class="h3"><a class="header_link" href="/">Home</a></span>
+    <span class="h3"><a class="header_link" href="/prediction">Prediction</a></span>
+    <span class="h3"><a class="header_link" href="/train">Training</a></span>
+    <span class="h3"><a class="header_link" href="/documents"><font color="red">Documents</font></a></span>
+    <span class="h3"><a class="header_link" href="/contact">Contact</a></span>
+</div>
+
+<!--  qEnd of header image and navigating bar -->
+
+<div class="straight_matter">
+
+    <div class="left_content">
+
+
+        <div style="padding: 0px 0px 30px 0px">
+
+
+</div>
+        <div>
+    <br><br>
+
+	<!--
+    <p>
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img src="../images/valid-xhtml10.png"
+                 alt="Valid XHTML 1.0 Strict" height="31" width="88"
+                 style="border-width:0px"/>
+        </a>
+    </p>
+	-->
+</div>
+
+    </div>
+    <!-- qEnd of <div class="left_content"> -->
+
+    <div class="right_content">
+
+        <div id="alert_msg_div" style="display:none; ">
+            <br><br><br>
+            <span class="h2" style="color:#006633">
+                Your task is running ...
+                <img src="../static/indicator.gif" alt=""> <br><br><br>
+            </span>
+            <span>
+                Thank you for using CPC. <br>
+                Your request is being processed.
+            </span>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+            <br><br><br>
+        </div>
+
+        <div id="form_div" style="display:block; ">
+
+           
+		 
+            <div><br><br></div>
+
+            <div id="form">
+                <form action="http://cpc.cbi.pku.edu.cn/programs/cpc.do" method="post" enctype="multipart/form-data">
+                    <div>
+			<style type="text/css">  
+		p{ text-indent:2em;}  
+		</style> 
+                        <fieldset>
+                            <legend><span class="h3_italic">About the format</span></legend>
+                           
+                            <p>If you want to make sure all the functions running well, you have to manage your file uploaded as we suggest strictly. </p>
+
+
+                        </fieldset>
+
+                        <br>
+                        <br>
+
+                        
+
+
+                    </div>
+
+                    <div>
+                        <fieldset>
+                            <legend><span class="h3_italic">Prediction</span></legend>
+                            <p>The input of prediction is matrix with two or three columns (pre-miRNA identifier, pre-miRNA sequence, pre-miRNA secondary structure [not necessary]) separated with tab key, in which each line represents a pre-miRNA. An example of prediction dataset is shown in below:</p>
+                            <img src="../static/prediction1.jpg" style="margin: 0 auto;">
+                            <br>
+
+                        </fieldset>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend><span class="h3_italic">Training</span></legend>
+                            <p>The input for training is a matrix separated with tab key, in which each line represents a miRNA, and contains four or five description items (miRNA identifier, pre-miRNA identifier, miRNA sequence, pre-miRNA sequence and pre-miRNA secondary structure [not necessary]). The example for training dataset is shown in below:</p>
+                            <img src="../static/training1.jpg" style="margin: 0 auto;">
+                            <br>
+
+                        </fieldset>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend><span class="h3_italic">Evaluation</span></legend>
+                            <p>If users would like to evaluate the prediction performance of miRLocator, one can upload the known miRNA datasets with the same format as training.</p>
+                            <br>
+
+                        </fieldset>
+
+                        <br>
+                        <br>
+                    </div>
+
+                   
+
+
+                </form>
+            </div>
+            <!-- qEnd of <div id="form"> -->
+
+        </div>
+        <!-- qEnd of <div id="form_div" > -->
+    </div>
+    <!-- qEnd of <div class="right_content"> -->
+
+
+</div>
+<!-- qEnd of <div class="straight_matter"> -->
+
+<div class="hr_bold"></div>
+
+<div class="footer">
+    <br>
+
+
+ <span class="h3"><a class="bottom_link" href="/">Home</a></span>
+    &nbsp;
+
+    <span class="h3"><a class="bottom_link" href="/prediction">Prediction</a></span>
+&nbsp;
+ <span class="h3"><a class="bottom_link" href="/train">Training</a></span>
+&nbsp;
+    <span class="h3"><a class="bottom_link" href="/documents">Documents</a></span>&nbsp;
+    <span class="h3"><a class="bottom_link" href="/contact">Contact</a></span>
+
+
+
+
+    <br>
+    <br>
+    <span class="copyright">Copyright ©
+        2018 <a href="http://bioinfo.nwafu.edu.cn">Center of Bioinformatics</a>,
+        NWFAU. All rights reserved.</span>
+    <br>
+    <br>
+</div>
+
+
+</div><!-- qEnd of <div class="center"> -->
+
+
+
+</body></html>
