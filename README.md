@@ -84,8 +84,8 @@ $ pip install scikit-learn scikit-neuralnetwork numpy scipy flask flask-WTF
 
 #### Building local miRLocator web server
 ```
-$git clone https://github.com/PyJulie/miRLocator.git
-$cd miRLocator
-$sudo python upload.py
+$ git clone https://github.com/PyJulie/miRLocator.git
+$ cd miRLocator
+$ sudo python upload.py
 ```
-Then http://localhost:8080 will be available.
+Then http://0.0.0.0:8080 will be available.
