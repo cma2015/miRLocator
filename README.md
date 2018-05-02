@@ -64,7 +64,7 @@ $ docker run hello-world
   For Mac OS X and Linux operating systems, open the terminal, for Windows operating system, open CMD. Typing the following command:
 ```bash
 # Pull miRLocator from Docker Hub
-$ docker pull malab/pea 
+$ docker pull malab/mirlocator
 ```
 ### Quckly start Docker miRLocator ###
 ```bash
