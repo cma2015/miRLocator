@@ -23,7 +23,7 @@ $sudo apt-get install vienna-rna
 $ pip install scikit-learn scikit-neuralnetwork numpy scipy flask flask-WTF
 ```
 
-#### Building local miRLocator web server
+#### Building local miRLocator server
 ```
 $ git clone https://github.com/cma2015/miRLocator.git
 $ cd miRLocator
