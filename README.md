@@ -4,7 +4,32 @@
 ![](https://tctechcrunch2011.files.wordpress.com/2014/06/apple_topic.png?w=220) </br>
 
 **Brief introduction:**
-miRNAs are ~21-nucleotide noncoding RNAs, some of which are known to sit at the heart of regulating gene expression in plant growth, development and response to environmental biotic and abiotic stresses. The most commonly used method for discovering miRNAs is based on nest-generation sequencing (NGS) technologies. However, this type of experimental method requires the identification of expressed miRNAs and has a limited ability to detect miRNAs that exhibit low, linkage, stress, developmental and/or cell-specific expression. Therefore, computational tools are urgently required to locate the precise mature miRNAs from pre-miRNA sequences. Here, we present an ML-based system with random forest algorithm named miRLocator for the computational prediction of mature miRNAs within plant pre-miRNAs. We implemented miRLocator into a Docker image and web interface (<http://bioinfo.nwafu.edu.cn:8080>) to maximize its practicability.
+miRNAs are ~21-nucleotide noncoding RNAs, some of which are known to sit at the heart of regulating gene expression in plant growth, development and response to environmental biotic and abiotic stresses. The most commonly used method for discovering miRNAs is based on nest-generation sequencing (NGS) technologies. However, this type of experimental method requires the identification of expressed miRNAs and has a limited ability to detect miRNAs that exhibit low, linkage, stress, developmental and/or cell-specific expression. Therefore, computational tools are urgently required to locate the precise mature miRNAs from pre-miRNA sequences. Here, we present an ML-based system with random forest algorithm named miRLocator for the computational prediction of mature miRNAs within plant pre-miRNAs. We implemented miRLocator into a Docker image (<https://hub.docker.com/r/malab/mirlocator>) and web interface (<http://bioinfo.nwafu.edu.cn/software>) to maximize its practicability. All source codes are availabel at: <https://github.com/cma2015/PEA>.
+
+## miRLocator local server construction##
+
+#### System Requirement
+* Ubuntu (>= 14.04)  
+
+#### Dependencies  
+* ViennaRNA V2.0:
+```bash
+$sudo apt-add-repository ppa:j-4/vienna-rna
+$sudo apt-get update
+$sudo apt-get install vienna-rna
+```
+* Python package: 
+```bash
+$ pip install scikit-learn scikit-neuralnetwork numpy scipy flask flask-WTF
+```
+
+#### Building local miRLocator web server
+```
+$ git clone https://github.com/cma2015/miRLocator.git
+$ cd miRLocator
+$ sudo python upload.py
+```
+Then miRLocator will be available at http://0.0.0.0:8080.
 
 ## miRLocator Docker image installation ##
 ### Docker installation and start ###
@@ -65,27 +90,3 @@ $ python miRLocator.py ‐p prediction ‐i /data/predictionData.txt ‐o /data/
 $ python miRLocator.py ‐p prediction ‐i /data/predictionData.txt ‐o /data/predict_output ‐m /data/trained_prediction_model ‐a /data/predictionData_Annotated.txt
 ```
 
-## miRLocator local server construction##
-
-#### System Requirement
-* Ubuntu (>= 14.04)  
-
-#### Dependencies  
-* ViennaRNA V2.0:
-```bash
-$sudo apt-add-repository ppa:j-4/vienna-rna
-$sudo apt-get update
-$sudo apt-get install vienna-rna
-```
-* Python package: 
-```bash
-$ pip install scikit-learn scikit-neuralnetwork numpy scipy flask flask-WTF
-```
-
-#### Building local miRLocator web server
-```
-$ git clone https://github.com/PyJulie/miRLocator.git
-$ cd miRLocator
-$ sudo python upload.py
-```
-Then http://0.0.0.0:8080 will be available.
