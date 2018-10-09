@@ -90,3 +90,5 @@ $ python miRLocator.py ‐p prediction ‐i /data/predictionData.txt ‐o /data/
 $ python miRLocator.py ‐p prediction ‐i /data/predictionData.txt ‐o /data/predict_output ‐m /data/trained_prediction_model ‐a /data/predictionData_Annotated.txt
 ```
 
+## Citation
+Cui, H., Zhai, J., & Ma, C. (2015). [**miRLocator: machine learning-based prediction of mature microRNAs within plant pre-miRNA sequences.**](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142753) PloS one, 10(11), e0142753.
