@@ -92,6 +92,6 @@ $ python miRLocator.py ‐p prediction ‐i /data/predictionData.txt ‐o /data/
 
 ## Citation
 
-Zhang T, Ju L, Zhai J, Song Y, Song J, Ma C. (2019) [**miRLocator: A Python Implementation and Web Server for Predicting miRNAs from Pre-miRNA Sequences.**](https://link.springer.com/protocol/10.1007/978-1-4939-9042-9_6) In: de Folter S. (eds) Plant MicroRNAs. Methods in Molecular Biology, vol 1932. Humana Press, New York, NY
+Zhang T, Ju L, Zhai J, Song Y, Song J, Ma C. (2019) [**miRLocator: A python implementation and web server for predicting miRNAs from pre-miRNA sequences.**](https://link.springer.com/protocol/10.1007/978-1-4939-9042-9_6) In: de Folter S. (eds) Plant MicroRNAs. Methods in Molecular Biology, vol 1932. Humana Press, New York, NY
 
 Cui H, Zhai J, Ma C. (2015). [**miRLocator: machine learning-based prediction of mature microRNAs within plant pre-miRNA sequences.**](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0142753) PLoS One, 10(11), e0142753.
