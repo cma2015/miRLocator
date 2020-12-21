@@ -1,6 +1,6 @@
 ## miRLocator: A python implementation and web server for predicting miRNAs from pre-miRNA sequences
 
-<a href="http://mirlocator.omicstudio.cloud" target="_blank"><img src="https://img.shields.io/badge/Web_server-ready-red.svg"></a><a href="https://hub.docker.com/r/malab/mirlocator" target="_blank"><img src="https://img.shields.io/badge/Docker_image-ready-red.svg" target="_blank"></a><a href="https://hub.docker.com/r/malab/mirlocator" target="_blank"><img src="https://img.shields.io/docker/pulls/malab/mirlocator"></a><a href="https://github.com/cma2015/deepEA" target="_blank"><img src="https://img.shields.io/badge/Source%20codes-support-blue"></a>
+<a href="http://mirlocator.omicstudio.cloud" target="_blank"><img src="https://img.shields.io/badge/Web_server-ready-red.svg"></a><a href="https://hub.docker.com/r/malab/mirlocator" target="_blank"><img src="https://img.shields.io/badge/Docker_image-ready-red.svg" target="_blank"></a><a href="https://hub.docker.com/r/malab/mirlocator" target="_blank"><img src="https://img.shields.io/docker/pulls/malab/mirlocator"></a><a href="https://github.com/cma2015/miRLocator" target="_blank"><img src="https://img.shields.io/badge/Source%20codes-support-blue"></a>
 
 ## Introduction
 
